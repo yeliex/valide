@@ -1,0 +1,33 @@
+{
+  "name": "valide",
+  "version": "0.0.1",
+  "private": true,
+  "description": "validator with json-schema (or joi as well in future )",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yeliex/valide.git"
+  },
+  "keywords": [
+    "validator"
+  ],
+  "author": "yeliex <yeliex@yeliex.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/yeliex/valide/issues"
+  },
+  "homepage": "https://github.com/yeliex/valide#readme",
+  "devDependencies": {
+    "@types/koa": "^2.11.0",
+    "@types/lodash": "^4.14.149",
+    "@types/node": "^12.12.14",
+    "lerna": "^3.19.0",
+    "typescript": "^3.7.3"
+  },
+  "dependencies": {
+    "lodash": "^4.17.15"
+  }
+}

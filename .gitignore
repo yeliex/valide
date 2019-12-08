@@ -1,0 +1,17 @@
+.idea/
+.vscode/
+
+node_modules
+lib/
+packages/*/lib/
+*.d.ts
+*.js
+*.log
+*.lock
+!index.js
+!index.d.js
+!packages/*/index.js
+!packages/*/index.d.ts
+!typing/*.d.ts
+!yarn.lock
+!.gitkeep
