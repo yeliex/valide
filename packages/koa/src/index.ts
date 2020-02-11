@@ -1,11 +1,16 @@
 type TParamType = 'query' | 'params' | 'body' | 'header';
 
-export interface IBaseOptions {
+type TValidator = 'json-schema';
+
+export interface IJsonSchemaOption {
+    name: 'json-schema';
 
 }
 
-export interface IInputOptions {
+export type IValidatorOption = TValidator | IJsonSchemaOption;
 
+export interface IBaseOptions {
+    validator: IValidatorOption;
 }
 
 export interface IValidatorOptions extends IBaseOptions {
@@ -18,7 +23,7 @@ export interface ISchema {
 }
 
 export default class KoaValidator {
-    constructor(options: IBaseOptions) {
+    constructor(options: Partial<IBaseOptions> = {}) {
 
     }
 }

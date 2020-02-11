@@ -1,0 +1,40 @@
+{
+  "name": "@valide/json-schema",
+  "version": "0.0.1",
+  "description": "validator with json-schema",
+  "main": "index.js",
+  "typings": "src/index.ts",
+  "scripts": {
+    "build": "tsc",
+    "clean": "rm -rf lib/",
+    "generate:schema": "ts-json-schema-generator --path ./src/*.ts --expose export --tsconfig ./tsconfig.json --jsDoc extended -c > src/definition.json",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yeliex/valide.git"
+  },
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/"
+  },
+  "keywords": [
+    "validator",
+    "json-schema"
+  ],
+  "author": "yeliex <yeliex@yeliex.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/yeliex/valide/issues"
+  },
+  "homepage": "https://github.com/yeliex/valide#readme",
+  "dependencies": {
+    "@valide/core": "^0.0.1",
+    "ajv": "^6.10.2",
+    "ajv-keywords": "^3.4.1",
+    "lodash": "^4.17.15",
+    "ts-json-schema-generator": "^0.58.0"
+  },
+  "devDependencies": {
+    "@types/ajv-keywords": "^3.4.0"
+  }
+}

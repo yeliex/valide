@@ -3,7 +3,13 @@
   "compileOnSave": true,
   "compilerOptions": {
     "baseUrl": "./",
-    "rootDir": "src",
-    "outDir": "lib"
-  }
+    "rootDir": "./src",
+    "outDir": "./lib"
+  },
+  "exclude": [
+    "node_modules"
+  ],
+  "include": [
+    "src"
+  ]
 }

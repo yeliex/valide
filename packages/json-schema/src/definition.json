@@ -1,0 +1,39 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "definitions": {
+    "IOptions": {
+      "additionalProperties": false,
+      "properties": {
+        "version": {
+          "$ref": "#/definitions/TAllowVersion",
+          "default": 7
+        }
+      },
+      "required": [
+        "version"
+      ],
+      "type": "object"
+    },
+    "JsonSchemaValidator": {
+      "additionalProperties": false,
+      "properties": {
+      },
+      "type": "object"
+    },
+    "TAllowVersion": {
+      "enum": [
+        4,
+        5,
+        6,
+        7
+      ],
+      "type": "number"
+    },
+    "TValidatorName": {
+      "enum": [
+        "json-schema"
+      ],
+      "type": "string"
+    }
+  }
+}

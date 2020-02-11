@@ -4,8 +4,9 @@
     "allowJs": false,
     "allowSyntheticDefaultImports": true,
     "charset": "utf8",
+    "declaration": true,
     "experimentalDecorators": true,
-    "importHelpers": true,
+    "importHelpers": false,
     "lib": [
       "esnext"
     ],
@@ -20,9 +21,9 @@
     "resolveJsonModule": true,
     "sourceMap": true,
     "skipLibCheck": true,
-    "target": "es5",
+    "target": "es2015",
     "typeRoots": [
-      "typing",
+      "typings",
       "node_modules/@types"
     ]
   },

@@ -1,16 +1,20 @@
 {
-  "name": "valide",
+  "name": "@valide/core",
   "version": "0.0.1",
-  "private": true,
   "description": "validator with json-schema (or joi as well in future )",
   "main": "index.js",
+  "typings": "index.d.ts",
   "scripts": {
-    "clean": "lerna exec npm run clean",
+    "build": "tsc",
+    "clean": "rm -rf lib/",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/yeliex/valide.git"
+  },
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/"
   },
   "keywords": [
     "validator"
@@ -21,15 +25,12 @@
     "url": "https://github.com/yeliex/valide/issues"
   },
   "homepage": "https://github.com/yeliex/valide#readme",
-  "devDependencies": {
-    "@types/koa": "^2.11.0",
-    "@types/lodash": "^4.14.149",
-    "@types/node": "^12.12.14",
-    "lerna": "^3.19.0",
-    "typescript": "^3.7.3"
-  },
   "dependencies": {
-    "lodash": "^4.17.15",
-    "ts-node": "^8.5.4"
+    "ajv": "^6.10.2",
+    "ajv-keywords": "^3.4.1",
+    "lodash": "^4.17.15"
+  },
+  "devDependencies": {
+    "@types/ajv-keywords": "^3.4.0"
   }
 }
