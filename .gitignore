@@ -16,3 +16,4 @@ packages/*/lib/
 !typing/*.d.ts
 !yarn.lock
 !.gitkeep
+!/packages/json-schema/src/definition.d.ts
